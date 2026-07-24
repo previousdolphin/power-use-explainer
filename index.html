@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Use Explainer — Global Energy &amp; Water in Scale</title>
+  <meta name="description" content="How much power do data centers, cooling systems, and lighting actually use? A data-driven editorial breakdown of global electricity consumption." />
+
+  <!-- Google Fonts: Playfair Display + Source Serif 4 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV START -->
+  <header class="site-header" id="top">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#top" class="nav-brand">
+        <span class="nav-brand-icon" aria-hidden="true">⚡</span>
+        <span>Power Use<em>Explainer</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#the-numbers">The Numbers</a></li>
+        <li><a href="#chart">Scale Chart</a></li>
+        <li><a href="#context">Context</a></li>
+        <li><a href="#sources" class="nav-cta">Sources</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- NAV END -->
+
+  <main>
+
+    <!-- HERO SECTION START -->
+    <section class="hero" id="hero" aria-labelledby="hero-headline">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">A data correction you need to read</p>
+        <h1 class="hero-headline" id="hero-headline">
+          Data Centers Are Not<br/>
+          <em>Eating the Grid.</em>
+        </h1>
+        <p class="hero-subhead">
+          The internet is massive — but your air conditioner and your light switch
+          still beat it, combined. Here's what global power use actually looks like,
+          with numbers grounded in IEA data.
+        </p>
+        <a href="#the-numbers" class="hero-cta">Read the breakdown</a>
+      </div>
+      <div class="hero-stat-strip" aria-label="Key statistics">
+        <div class="hero-stat" data-counter="415" data-suffix=" TWh">
+          <span class="stat-num" aria-live="polite">0</span>
+          <span class="stat-unit">TWh</span>
+          <span class="stat-label">Data centers (2024)</span>
+        </div>
+        <div class="hero-stat" data-counter="2100" data-suffix=" TWh">
+          <span class="stat-num" aria-live="polite">0</span>
+          <span class="stat-unit">TWh</span>
+          <span class="stat-label">Space cooling (2022)</span>
+        </div>
+        <div class="hero-stat" data-counter="2200" data-suffix=" TWh">
+          <span class="stat-num" aria-live="polite">0</span>
+          <span class="stat-unit">TWh</span>
+          <span class="stat-label">Global lighting (2022)</span>
+        </div>
+        <div class="hero-stat" data-counter="1.5" data-suffix="%" data-decimal="1">
+          <span class="stat-num" aria-live="polite">0</span>
+          <span class="stat-unit">%</span>
+          <span class="stat-label">Data centers' share of electricity</span>
+        </div>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+
+    <!-- THE NUMBERS SECTION START -->
+    <section class="the-numbers" id="the-numbers" aria-labelledby="numbers-heading">
+      <div class="section-inner">
+        <header class="section-header">
+          <p class="section-eyebrow">Setting the record straight</p>
+          <h2 id="numbers-heading">The thesis is broadly correct.<br/><em>The scale is wildly wrong.</em></h2>
+          <p class="section-intro">
+            You've probably seen headlines claiming the internet uses 10% of global electricity. It's a satisfying narrative — tech's invisible footprint finally made visible. The problem? The number is off by a factor of six or more.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+
+          <!-- Card 1: Data Centers -->
+          <article class="card reveal-card" aria-labelledby="card-dc-title">
+            <div class="card-accent dc" aria-hidden="true"></div>
+            <div class="card-body">
+              <span class="card-tag">Data Centers</span>
+              <h3 id="card-dc-title">415 TWh used globally in 2024</h3>
+              <p>
+                That's roughly <strong>1.5% of world electricity consumption</strong> and
+                just <strong>0.3% of total final energy</strong> — because electricity itself
+                is only about 20% of all energy the world uses (the rest is heat, transport fuel, etc.).
+                Impressive in absolute scale. Modest as a share of the whole.
+              </p>
+              <p class="card-detail">
+                Source: IEA Data Centres and Data Transmission Networks, 2024 report.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Space Cooling -->
+          <article class="card reveal-card" aria-labelledby="card-cool-title">
+            <div class="card-accent cool" aria-hidden="true"></div>
+            <div class="card-body">
+              <span class="card-tag">Space Cooling</span>
+              <h3 id="card-cool-title">~2,100 TWh consumed in 2022</h3>
+              <p>
+                Air conditioners and chillers drew five times more electricity than every data center
+                on earth — nearly <strong>7% of global electricity</strong>. And as climate heats,
+                this figure is climbing fast. It is one of the fastest-growing end-uses in the entire
+                energy system.
+              </p>
+              <p class="card-detail">
+                Source: IEA Cooling report, 2023 tracking; electricity for space cooling.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Lighting -->
+          <article class="card reveal-card" aria-labelledby="card-light-title">
+            <div class="card-accent light" aria-hidden="true"></div>
+            <div class="card-body">
+              <span class="card-tag">Lighting</span>
+              <h3 id="card-light-title">~2,200 TWh — and shrinking</h3>
+              <p>
+                Lighting consumed approximately <strong>8% of global electricity</strong> in 2022,
+                but the LED revolution has bent this curve downward sharply. In 2010, lighting used
+                over 15%. It remains, however, still five times the data center total.
+              </p>
+              <p class="card-detail">
+                Source: IEA Lighting report, Tracking Clean Energy Progress 2023.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- THE NUMBERS SECTION END -->
+
+    <!-- CHART SECTION START -->
+    <section class="chart-section" id="chart" aria-labelledby="chart-heading">
+      <div class="section-inner">
+        <header class="section-header section-header--light">
+          <p class="section-eyebrow">Visual comparison</p>
+          <h2 id="chart-heading">Global Electricity Consumption<br/><em>by End Use</em></h2>
+          <p class="section-intro">
+            All figures approximate TWh per year. Scroll down to see the bars animate in.
+          </p>
+        </header>
+
+        <div class="chart-container" role="img" aria-label="Bar chart comparing electricity use by sector">
+          <div class="chart-bars" id="chart-bars">
+            <!-- Bars injected by JS; no-JS fallback table follows -->
+          </div>
+          <!-- No-JS fallback -->
+          <noscript>
+            <table class="chart-fallback-table">
+              <caption>Global electricity use by sector (approximate TWh/year)</caption>
+              <thead><tr><th>Sector</th><th>TWh / year</th><th>% of world electricity</th></tr></thead>
+              <tbody>
+                <tr><td>Industrial motors &amp; processes</td><td>~8,000</td><td>~28%</td></tr>
+                <tr><td>Lighting</td><td>~2,200</td><td>~8%</td></tr>
+                <tr><td>Space cooling</td><td>~2,100</td><td>~7%</td></tr>
+                <tr><td>Water heating</td><td>~1,400</td><td>~5%</td></tr>
+                <tr><td>Appliances &amp; electronics (homes)</td><td>~1,100</td><td>~4%</td></tr>
+                <tr><td>Data centers</td><td>~415</td><td>~1.5%</td></tr>
+                <tr><td>Electric vehicles (charging)</td><td>~130</td><td>~0.5%</td></tr>
+              </tbody>
+            </table>
+          </noscript>
+        </div>
+
+        <p class="chart-note">
+          World total electricity generation: approximately 28,800 TWh (IEA, 2022). Figures are rounded; sector boundaries vary by source.
+        </p>
+      </div>
+    </section>
+    <!-- CHART SECTION END -->
+
+    <!-- CONTEXT SECTION START -->
+    <section class="context-section" id="context" aria-labelledby="context-heading">
+      <div class="section-inner context-inner">
+        <div class="context-text">
+          <p class="section-eyebrow">Why it matters</p>
+          <h2 id="context-heading">Energy isn't just electricity.<br/><em>And electricity isn't the story.</em></h2>
+          <p>
+            The confusion runs deeper than bad headlines. When people say "X% of global energy," they
+            usually mean electricity — but electricity is only around <strong>20% of global final energy
+            consumption</strong>. The rest is direct combustion: gas and oil for heating buildings,
+            diesel for trucks, coal for industrial furnaces.
+          </p>
+          <p>
+            This means data centers, even if they consumed 5% of electricity, would still represent
+            just 1% of all the energy humanity burns. The distinction matters enormously for policy:
+            decarbonizing electrons is proceeding rapidly; decarbonizing heat and transport is far harder.
+          </p>
+          <p>
+            None of this excuses waste. Data center water use — particularly for cooling — is a
+            legitimate, under-reported concern in water-stressed regions. But energy efficiency
+            efforts should be aimed at the biggest targets first.
+          </p>
+        </div>
+
+        <aside class="context-sidebar" aria-label="Key facts">
+          <h3>Quick calibrations</h3>
+          <ul class="sidebar-facts" role="list">
+            <li>
+              <span class="fact-icon" aria-hidden="true">🌍</span>
+              <div>
+                <strong>World final energy:</strong> ~410 EJ / year (IEA 2022).
+                Electricity is ~80 EJ of that.
+              </div>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">❄️</span>
+              <div>
+                <strong>Cooling's trajectory:</strong> By 2050, cooling could be the
+                single largest electricity end-use globally under high-warming scenarios.
+              </div>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">💡</span>
+              <div>
+                <strong>LED leverage:</strong> If all lighting worldwide switched to LED today,
+                the savings would equal roughly 5× the current data center total.
+              </div>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">💧</span>
+              <div>
+                <strong>Water, not watts:</strong> A single large data center can use
+                3–5 million gallons of water per day for cooling — a genuinely local
+                environmental stress.
+              </div>
+            </li>
+            <li>
+              <span class="fact-icon" aria-hidden="true">🚂</span>
+              <div>
+                <strong>Transport comparison:</strong> Global road transport used
+                ~27,000 TWh of energy equivalent in 2022 — mostly liquid fuel,
+                invisible to electricity statistics.
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <!-- CONTEXT SECTION END -->
+
+    <!-- TESTIMONIAL BAND START -->
+    <section class="testimonial-band" aria-labelledby="testimonial-heading">
+      <div class="section-inner">
+        <h2 class="sr-only" id="testimonial-heading">Expert perspectives</h2>
+        <div class="testimonials-grid">
+
+          <blockquote class="testimonial reveal-card">
+            <p>
+              "The 10% figure has been circulating since around 2008 and was dubious even then.
+              Good analysis requires good data — and good data shows a far more nuanced picture."
+            </p>
+            <footer>
+              <cite>— Energy systems researcher, paraphrased from IEA commentary</cite>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal-card">
+            <p>
+              "Efficiency gains in data center hardware have largely offset the explosive growth
+              in computing demand. The amount of compute per kilowatt-hour has roughly doubled
+              every 2–3 years."
+            </p>
+            <footer>
+              <cite>— Paraphrased from Lawrence Berkeley National Laboratory, 2020 report</cite>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal-card">
+            <p>
+              "Space cooling is now the fastest-growing source of electricity demand globally.
+              In some projections it overtakes industrial use by mid-century. It deserves far
+              more policy attention than it currently receives."
+            </p>
+            <footer>
+              <cite>— IEA Cooling Report synthesis, 2023</cite>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIAL BAND END -->
+
+    <!-- FINAL CTA BAND START -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="section-inner cta-inner">
+        <h2 id="cta-heading">Numbers deserve<br/><em>the right context.</em></h2>
+        <p>
+          The best climate action starts with honest accounting. Share this breakdown,
+          check the primary sources, and push back on headlines that skip the denominator.
+        </p>
+        <div class="cta-actions">
+          <a href="#sources" class="btn-primary">View all sources</a>
+          <a href="#chart" class="btn-secondary">Back to the chart</a>
+        </div>
+      </div>
+    </section>
+    <!-- FINAL CTA BAND END -->
+
+  </main>
+
+  <!-- FOOTER START -->
+  <footer class="site-footer" id="sources">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <span class="nav-brand-icon" aria-hidden="true">⚡</span>
+        <span class="footer-brand-name">Power Use <em>Explainer</em></span>
+        <p class="footer-tagline">Grounding energy conversation in actual data.</p>
+      </div>
+
+      <nav class="footer-sources" aria-label="Primary sources">
+        <h3>Primary Sources</h3>
+        <ul role="list">
+          <li>
+            <a href="https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks" rel="noopener noreferrer" target="_blank">
+              IEA — Data Centres &amp; Data Transmission Networks (2024)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.iea.org/energy-system/buildings/space-cooling" rel="noopener noreferrer" target="_blank">
+              IEA — Space Cooling tracking (2023)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.iea.org/energy-system/buildings/lighting" rel="noopener noreferrer" target="_blank">
+              IEA — Lighting, Tracking Clean Energy Progress (2023)
+            </a>
+          </li>
+          <li>
+            <a href="https://eta.lbl.gov/publications/united-states-data-center-energy" rel="noopener noreferrer" target="_blank">
+              Lawrence Berkeley National Laboratory — U.S. Data Center Energy Use (2020)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.iea.org/data-and-statistics/data-product/world-energy-balances" rel="noopener noreferrer" target="_blank">
+              IEA — World Energy Balances (2022 edition)
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-note">
+        <h3>A note on methodology</h3>
+        <p>
+          All figures are approximate and sourced from IEA's published tracking data unless otherwise noted.
+          Electricity consumption statistics use the physical energy method unless stated otherwise.
+          Sector boundaries (e.g., "data centers" vs. "data transmission networks") vary by study;
+          figures here reflect the commonly cited "data center facilities" scope only.
+        </p>
+        <p class="footer-update">Last updated: 2024</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Power Use Explainer. All rights reserved.</p>
+      <p class="yvow-credit">Built with help from <a href="https://yourveryownweb.site" rel="noopener">YourVeryOwnWeb.site</a></p>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
